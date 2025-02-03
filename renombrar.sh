@@ -20,7 +20,6 @@ read -p "Ingresa el nombre de como lo quieres renombrar: " nombre_new
 for i in $lista; do
     
     tipo=$(tipo_archivo "$i")
-    echo "$tipo"
     #El nombre definitivo que llevaran los archivos
     new_name="${nombre_new}${num}.${tipo}"
     mv "$i" "$new_name"
